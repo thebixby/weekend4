@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+form {
+    float: right;
+}
+
+input[type="submit"] {
+    margin-bottom: 50px;
+}
+
+table {
+    border-spacing: 0px;
+    border-collapse:collapse;
+    table-layout:fixed;
+    width:350px;
+}
+
+th,
+td {
+    padding: 10px 30px 5px 10px;
+    text-align: left;
+}
+
+.applicants {
+    background-color: #DDA0DD;
+}
+
+tbody tr:nth-child(odd) {
+    background: #eee;
+}
+
+
+table {
+    border-collapse:collapse;
+    table-layout:fixed;
+    width:350px;
+}
+table td {
+    border:solid
+    1px #fab;
+    width:100px;
+    word-wrap:break-word;
+}

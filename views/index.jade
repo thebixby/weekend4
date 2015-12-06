@@ -1,0 +1,252 @@
+doctype html
+html
+head
+link(href='stylesheets/style.css', type='text/css', rel='stylesheet')
+script(type='text/javascript', src='jquery-1.11.3.min.js')
+script(type='text/javascript', src='script.js')
+title Rando Corp Application
+body
+    h1.rando Rando Corp
+    button.admin Access Admin
+    form#myForm
+        fieldset
+            p
+            input#firstName(required='', type='text', placeholder='First Name', name='firstName')
+            p
+            input#lastName(required='', type='text', placeholder='Last Name', name='lastName')
+            p
+            label(for='desired-job') Desired Job:
+            br
+            select#desired-job(name='desired-job')
+                option(value='designer') Designer
+                option(value='developer') Developer
+                option(value='mystery') Mystery Job
+                option(value='researcher') Researcher
+            p
+            label(for='specificLocation') Desired Location:
+            br
+            select#specificLocation(name='specificLocation')
+                option(value='remote') Remote
+                option(value='minneapolis') Minneapolis, MN
+                option(value='new-york') New York, NY
+                option(value='chicago') Chicago, IL
+                option(value='la') Los Angeles, CA
+                option(value='london') London, UK
+            div
+
+                label(for='emp-history') Employment History
+            fieldset.emp-history
+                p
+                input#job-title(required='', type='text', placeholder='Job Title', name='job-title')
+                p
+                input#emp-name(required='', type='text', placeholder='Employer Name', name='emp-name')
+                p
+                input#emp-city(required='', type='text', placeholder='City', name='emp-city')
+                p
+                label(for='state') State
+                select#state(name='state')
+                    option(value='AL') Alabama
+                    option(value='AK') Alaska
+                    option(value='AZ') Arizona
+                    option(value='AR') Arkansas
+                    option(value='CA') California
+                    option(value='CO') Colorado
+                    option(value='CT') Connecticut
+                    option(value='DE') Delaware
+                    option(value='DC') District of Columbia
+                    option(value='FL') Florida
+                    option(value='GA') Georgia
+                    option(value='HI') Hawaii
+                    option(value='ID') Idaho
+                    option(value='IL') Illinois
+                    option(value='IN') Indiana
+                    option(value='IA') Iowa
+                    option(value='KS') Kansas
+                    option(value='KY') Kentucky
+                    option(value='LA') Louisiana
+                    option(value='ME') Maine
+                    option(value='MD') Maryland
+                    option(value='MA') Massachusetts
+                    option(value='MI') Michigan
+                    option(value='MN') Minnesota
+                    option(value='MS') Mississippi
+                    option(value='MO') Missouri
+                    option(value='MT') Montana
+                    option(value='NE') Nebraska
+                    option(value='NV') Nevada
+                    option(value='NH') New Hampshire
+                    option(value='NJ') New Jersey
+                    option(value='NM') New Mexico
+                    option(value='NY') New York
+                    option(value='NC') North Carolina
+                    option(value='ND') North Dakota
+                    option(value='OH') Ohio
+                    option(value='OK') Oklahoma
+                    option(value='OR') Oregon
+                    option(value='PA') Pennsylvania
+                    option(value='RI') Rhode Island
+                    option(value='SC') South Carolina
+                    option(value='SD') South Dakota
+                    option(value='TN') Tennessee
+                    option(value='TX') Texas
+                    option(value='UT') Utah
+                    option(value='VT') Vermont
+                    option(value='VA') Virginia
+                    option(value='WA') Washington
+                    option(value='WV') West Virginia
+                    option(value='WI') Wisconsin
+                    option(value='WY') Wyoming
+                p
+
+                label(for='job-description') Description of Duties
+                br
+                textarea#job-description(rows='4', cols='50', name='job-description')
+                p
+                label(for='skills') List of Skills (Please Place A Comma Between Each Skill)
+                br
+                textarea#skills(rows='10', cols='50', name='skills')
+            fieldset.emp-history2
+                p
+                input#job-title2(required='', type='text', placeholder='Job Title', name='job-title2')
+                p
+                input#emp-name2(required='', type='text', placeholder='Employer Name', name='emp-name2')
+                p
+                input#emp-city2(required='', type='text', placeholder='City', name='emp-city2')
+                p
+                label(for='state2') State
+                select#state2(name='state2')
+                    option(value='AL') Alabama
+                    option(value='AK') Alaska
+                    option(value='AZ') Arizona
+                    option(value='AR') Arkansas
+                    option(value='CA') California
+                    option(value='CO') Colorado
+                    option(value='CT') Connecticut
+                    option(value='DE') Delaware
+                    option(value='DC') District of Columbia
+                    option(value='FL') Florida
+                    option(value='GA') Georgia
+                    option(value='HI') Hawaii
+                    option(value='ID') Idaho
+                    option(value='IL') Illinois
+                    option(value='IN') Indiana
+                    option(value='IA') Iowa
+                    option(value='KS') Kansas
+                    option(value='KY') Kentucky
+                    option(value='LA') Louisiana
+                    option(value='ME') Maine
+                    option(value='MD') Maryland
+                    option(value='MA') Massachusetts
+                    option(value='MI') Michigan
+                    option(value='MN') Minnesota
+                    option(value='MS') Mississippi
+                    option(value='MO') Missouri
+                    option(value='MT') Montana
+                    option(value='NE') Nebraska
+                    option(value='NV') Nevada
+                    option(value='NH') New Hampshire
+                    option(value='NJ') New Jersey
+                    option(value='NM') New Mexico
+                    option(value='NY') New York
+                    option(value='NC') North Carolina
+                    option(value='ND') North Dakota
+                    option(value='OH') Ohio
+                    option(value='OK') Oklahoma
+                    option(value='OR') Oregon
+                    option(value='PA') Pennsylvania
+                    option(value='RI') Rhode Island
+                    option(value='SC') South Carolina
+                    option(value='SD') South Dakota
+                    option(value='TN') Tennessee
+                    option(value='TX') Texas
+                    option(value='UT') Utah
+                    option(value='VT') Vermont
+                    option(value='VA') Virginia
+                    option(value='WA') Washington
+                    option(value='WV') West Virginia
+                    option(value='WI') Wisconsin
+                    option(value='WY') Wyoming
+                p
+                label(for='job-description2') Description of Duties
+                br
+                textarea#job-description2(rows='4', cols='50', name='job-description2')
+                br
+                p
+                label(for='skills2') List of Skills (Please Place A Comma Between Each Skill)
+                br
+                textarea#skills2(rows='10', cols='50', name='skills2')
+            fieldset.emp-history3
+                p
+                input#job-title3(required='', type='text', placeholder='Job Title', name='job-title3')
+                p
+                input#emp-name3(required='', type='text', placeholder='Employer Name', name='emp-name3')
+                p
+                input#emp-city3(required='', type='text', placeholder='City', name='emp-city3')
+                p
+                label(for='state3') State
+                select#state3(name='state3')
+                    option(value='AL') Alabama
+                    option(value='AK') Alaska
+                    option(value='AZ') Arizona
+                    option(value='AR') Arkansas
+                    option(value='CA') California
+                    option(value='CO') Colorado
+                    option(value='CT') Connecticut
+                    option(value='DE') Delaware
+                    option(value='DC') District of Columbia
+                    option(value='FL') Florida
+                    option(value='GA') Georgia
+                    option(value='HI') Hawaii
+                    option(value='ID') Idaho
+                    option(value='IL') Illinois
+                    option(value='IN') Indiana
+                    option(value='IA') Iowa
+                    option(value='KS') Kansas
+                    option(value='KY') Kentucky
+                    option(value='LA') Louisiana
+                    option(value='ME') Maine
+                    option(value='MD') Maryland
+                    option(value='MA') Massachusetts
+                    option(value='MI') Michigan
+                    option(value='MN') Minnesota
+                    option(value='MS') Mississippi
+                    option(value='MO') Missouri
+                    option(value='MT') Montana
+                    option(value='NE') Nebraska
+                    option(value='NV') Nevada
+                    option(value='NH') New Hampshire
+                    option(value='NJ') New Jersey
+                    option(value='NM') New Mexico
+                    option(value='NY') New York
+                    option(value='NC') North Carolina
+                    option(value='ND') North Dakota
+                    option(value='OH') Ohio
+                    option(value='OK') Oklahoma
+                    option(value='OR') Oregon
+                    option(value='PA') Pennsylvania
+                    option(value='RI') Rhode Island
+                    option(value='SC') South Carolina
+                    option(value='SD') South Dakota
+                    option(value='TN') Tennessee
+                    option(value='TX') Texas
+                    option(value='UT') Utah
+                    option(value='VT') Vermont
+                    option(value='VA') Virginia
+                    option(value='WA') Washington
+                    option(value='WV') West Virginia
+                    option(value='WI') Wisconsin
+                    option(value='WY') Wyoming
+                p
+
+                label(for='job-description3') Description of Duties
+                br
+                textarea#job-description3(rows='4', cols='50', name='job-description3')
+                p
+                label(for='skills3') List of Skills (Please Place A Comma Between Each Skill)
+                br
+                textarea#skills3(rows='10', cols='50', name='skills3')
+                br
+input#submit(type='submit', name='submit', value='Submit Applicant Information')
+div.footer
+footer
+    p Rando Corp

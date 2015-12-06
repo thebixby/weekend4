@@ -1,0 +1,22 @@
+doctype html
+html
+head
+link(href='stylesheets/style2.css', type='text/css', rel='stylesheet')
+script(type='text/javascript', src='jquery-1.11.3.min.js')
+script(type='text/javascript', src='script.js')
+title Rando Corp Applicant Admin
+body
+html
+    h1 Rando Corp Applicant Admin
+    form
+        input(name='find-applicants', placeholder='Search Applicants')
+        input(type='submit', value='Search')
+    table.applicant-list
+        thead.applicants
+            th(scope='col') First Name
+            th(scope='col') Last Name
+            th(scope='col') Desired Location
+            th(scope='col') Last Employer
+            th(scope='col') Skills
+        tbody.employeeList
+        tbody

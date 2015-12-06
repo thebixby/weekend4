@@ -1,0 +1,27 @@
+h1 {
+  float: left;
+  clearfix: right;
+}
+
+.admin {
+  float: right;
+}
+
+#myForm {
+  clear: both;
+}
+
+#submit {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 40px;
+  padding: 1px;
+  background-color: #efefef;
+  text-align: center;
+}
